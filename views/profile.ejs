@@ -1,0 +1,21 @@
+<!-- Importing CSS file for the profile page -->
+<link rel="stylesheet" href="/css/profile.css" />
+
+<!-- Profile page content -->
+<div class="signIn-header-container">
+  <p class="sign-in-header">Profile</p>
+  <div class="signIn-container">
+    <!-- User name -->
+    <div class="input-container">
+      <i class="fas fa-user icon"></i>
+      <div class="input-email"><%= locals.user.name %></div>
+    </div>
+    <!-- User email -->
+    <div class="input-container">
+      <i class="fas fa-envelope icon"></i>
+      <div class="input-email"><%= locals.user.email %></div>
+    </div>
+    <!-- Reset password link -->
+    <a href="/reset-password" class="reset-password">Reset Password</a>
+  </div>
+</div>

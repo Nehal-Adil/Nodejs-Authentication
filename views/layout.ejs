@@ -1,0 +1,75 @@
+<!-- This is the layout file used for rendering common page elements across the application -->
+
+<html>
+  <head>
+    <title><%= title %></title>
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Noty CSS for notifications -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="Shortcut icon"
+      type="image/x-icon"
+      href="/images/authentication.png"
+    />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <!-- Layout-specific CSS -->
+    <link rel="stylesheet" href="/css/header.css" />
+    <!-- Header-specific CSS -->
+    <link rel="stylesheet" href="/css/footer.css" />
+    <!-- Footer-specific CSS -->
+    <%- style %>
+    <!-- Page-specific styles -->
+  </head>
+  <body>
+    <!-- Header section -->
+    <%- include('_header') %>
+    <!-- Include the header template -->
+
+    <!-- Main content section -->
+    <main id="layout-main"><%- body %></main>
+    <!-- Render the main content of the page -->
+
+    <!-- Footer section -->
+    <%- include('_footer'); %>
+    <!-- Include the footer template -->
+
+    <!-- Script section -->
+    <%- script %>
+    <script>
+      <% if(flash.success && flash.success.length > 0) { %>
+        new Noty({
+          theme: "relax",
+          text: "<%= flash.success %>",
+          type: "success",
+          layout: "topRight",
+          timeout: 1500
+        }).show();
+      <% } %>
+      <% if(flash.error && flash.error.length > 0) { %>
+        new Noty({
+          theme: "relax",
+          text: "<%= flash.error %>",
+          type: "error",
+          layout: "topRight",
+          timeout: 1500
+        }).show();
+      <% } %>
+    </script>
+  </body>
+</html>

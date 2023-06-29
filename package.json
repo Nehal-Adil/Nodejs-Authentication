@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^5.0.0",
     "cookie-parser": "^1.4.6",
@@ -25,6 +26,8 @@
     "express": "^4.18.2",
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.17.3",
+    "googleapis": "^120.0.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.3.1",
     "nodemailer": "^6.9.3",
     "nodemon": "^2.0.22",
