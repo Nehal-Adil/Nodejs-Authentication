@@ -1,7 +1,0 @@
-/* Styling for the footer section */
-.footer {
-  position: fixed; /* Fixes the position of the footer */
-  width: 100vw; /* Sets the width of the footer to 100% of the viewport width */
-  bottom: 0; /* Positions the footer at the bottom of the viewport */
-  border-bottom: 8px solid #087f5b; /* Adds a bottom border with a width of 8 pixels and color #087f5b */
-}

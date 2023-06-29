@@ -1,30 +1,21 @@
-<!-- Importing CSS file for the sign-in page -->
 <link rel="stylesheet" href="/css/user_sign_in.css" />
 
-<!-- Sign-in page content -->
 <div class="signIn-header-container">
-  <p class="sign-in-header">Sign In to Nodejs Authentication</p>
+  <p class="sign-in-header">Sign In</p>
   <p class="signUP-text">
-    Don't have an account?
     <a href="/sign-up" class="signUP-link">Sign up</a>
   </p>
   <div class="signIn-container">
-    <!-- Sign-in with Google button -->
     <a class="google-signin" href="auth/google">
-      <i class="fab fa-google"></i>
       Sign In/Sign Up with Google
     </a>
-    <!-- Or separator -->
     <div class="or-text-container">
       <p class="or-text"></p>
       <span class="span-text"> OR </span>
       <p class="or-text"></p>
     </div>
-    <!-- Sign-in form -->
     <form action="/create-session" method="POST">
-      <!-- Email input field -->
       <div class="input-container">
-        <i class="fas fa-envelope icon"></i>
         <input
           type="email"
           name="email"
@@ -33,9 +24,7 @@
           required
         />
       </div>
-      <!-- Password input field -->
       <div class="input-container">
-        <i class="fas fa-lock icon"></i>
         <input
           type="password"
           name="password"
@@ -44,10 +33,8 @@
           required
         />
       </div>
-      <!-- Sign In button -->
       <input type="submit" value="Sign In" class="input-submit" />
     </form>
-    <!-- Forgot password link -->
     <a href="forgot-password" class="forgot-password">Forgot Password?</a>
   </div>
 </div>

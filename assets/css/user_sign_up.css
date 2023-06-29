@@ -1,6 +1,5 @@
-/* Styles for the sign-in header container */
 .signIn-header-container {
-  margin: 80px auto; /* Centers the container horizontally */
+  margin: 80px auto;
   width: 600px;
   display: flex;
   flex-direction: column;
@@ -8,20 +7,17 @@
   justify-content: center;
 }
 
-/* Styles for the sign-in header */
 .sign-in-header {
   font-size: 24px;
-  font-weight: bold;
-  color: #343a40;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
-/* Styles for the sign-in container */
 .signIn-container {
-  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow */
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
   padding: 24px;
   width: 600px;
-  margin: 20px auto; /* Centers the container horizontally */
+  margin: 20px auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -32,89 +28,60 @@
 /* Styles for the Google sign-in button */
 .google-signin:link,
 .google-signin:visited {
-  background-color: #dd4b39;
+  background-color: #214eff;
   text-decoration: none;
   color: #fff;
   padding: 10px 0;
   width: 560px;
-  border-radius: 5px;
   text-align: center;
   display: inline-block;
 }
 
-.google-signin:hover,
-.google-signin:active {
-  color: #087f5b;
-  background-color: #fff;
-}
-
-/* Styles for the "or" text separator */
 .or-text-container {
   display: flex;
 }
 
 .or-text {
   width: 260px;
-  border-bottom: 1px dotted #343a40;
+  border-bottom: 1px solid #343a40;
   margin: 30px 0;
 }
 
-/* Styles for the span text */
 .span-text {
   margin: 22px 0;
 }
 
-/* Styles for the input container */
 .input-container {
   width: 560px;
   height: 40px;
   margin-bottom: 20px;
-  border: 1.5px solid #e6fcf5;
-  border-radius: 5px;
   display: flex;
   align-items: center;
   padding: 0 10px;
 }
 
-/* Styles for the email input */
 .input-email {
   border: none;
   height: 37px;
   width: 100%;
-  line-height: 1;
   font-size: 16px;
-  color: #343a40;
-}
-
-.icon {
-  padding: 10px 10px 10px 0;
-  color: #087f5b;
-}
-
-.input-email:focus {
-  outline: none;
 }
 
 .input-container:hover {
-  border-color: #087f5b;
+  border-color: #214eff;
 }
 
-/* Styles for the submit button */
 .input-submit {
   width: 560px;
   height: 40px;
-  color: #087f5b;
+  color: #214eff;
   background-color: #fff;
-  border: 1px solid #087f5b;
-  border-radius: 5px;
-  line-height: 1;
+  border: 1px solid #214eff;
   font-size: 18px;
-  font-family: bold;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 .input-submit:hover {
   color: #fff;
-  background-color: #087f5b;
+  background-color: #214eff;
 }

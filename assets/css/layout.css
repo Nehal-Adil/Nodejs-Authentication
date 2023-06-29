@@ -5,20 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Body styles */
-body {
-  font-family: "Inter", sans-serif; /* Sets the font family for the body */
-  color: #343a40; /* Sets the text color for the body */
-  line-height: 1; /* Sets the line height for the body */
-}
-
-/* Main layout styles */
 #layout-main {
-  overflow: scroll; /* Enables scrolling if content overflows */
-  height: 100vh; /* Sets the height of the main layout to 100% of the viewport height */
-}
-
-/* Styles for scrollbar in #layout-main */
-#layout-main::-webkit-scrollbar {
-  display: none; /* Hides the scrollbar */
+  overflow: scroll;
+  height: 100vh;
 }

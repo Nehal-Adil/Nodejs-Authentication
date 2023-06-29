@@ -1,47 +1,15 @@
-/* Styles for the header section */
 .header {
-  position: fixed; /* Fixes the position of the header */
-  top: 0; /* Positions the header at the top */
-  width: 100vw; /* Sets the width of the header to 100% of the viewport width */
-  display: flex; /* Displays flexbox */
-  padding: 10px; /* Adds padding to the header */
-  background-color: #087f5b; /* Sets the background color of the header */
-  align-items: center; /* Centers child elements vertically */
-  justify-content: space-between; /* Distributes child elements with space between them */
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  padding: 10px;
+  background-color: #214eff;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Styles for the icon container */
-.icon-container {
-  display: flex; /* Displays flexbox */
-}
-
-/* Styles for the header image */
-.header-img {
-  width: 35px; /* Sets the width of the header image */
-  height: auto; /* Sets the height of the header image to maintain aspect ratio */
-  object-fit: contain; /* Scales the image to fit inside the container */
-  margin-right: 10px; /* Adds right margin to the header image */
-}
-
-/* Styles for the header text */
 .header-text {
-  color: #e6fcf5; /* Sets the text color of the header text */
-  font-size: 32px; /* Sets the font size of the header text */
-  line-height: 1; /* Sets the line height of the header text */
-}
-
-/* Styles for the sign-out link */
-.sign-out:link,
-.sign-out:visited {
-  font-size: 18px; /* Sets the font size of the sign-out link */
-  color: #e6fcf5; /* Sets the text color of the sign-out link */
-  font-weight: bold; /* Sets the font weight of the sign-out link */
-  text-decoration: none; /* Removes text decoration from the sign-out link */
-  text-transform: uppercase; /* Converts the text to uppercase */
-}
-
-/* Styles for the sign-out link on hover and active */
-.sign-out:hover,
-.sign-out:active {
-  color: #dd4b39; /* Changes the text color of the sign-out link on hover and active state */
+  color: white;
+  font-size: 32px;
 }
