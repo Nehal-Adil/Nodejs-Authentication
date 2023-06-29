@@ -11,7 +11,7 @@ exports.signUp = (user) => {
   // Send the email
   nodemailer.transporter.sendMail(
     {
-      from: "ananddeveloperthakur@gmail.com",
+      from: "parker12oct@gmail.com",
       to: user.email,
       subject: "Sign Up at Node Authentication!!",
       html: htmlString,

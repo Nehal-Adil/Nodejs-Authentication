@@ -11,7 +11,7 @@ exports.google = (user) => {
   // Send the email
   nodemailer.transporter.sendMail(
     {
-      from: "ananddeveloperthakur@gmail.com",
+      from: "parker12oct@gmail.com",
       to: user.email,
       subject: "You have successfully Sign-In/Sign-Up to Node Authentication!!",
       html: htmlString,
